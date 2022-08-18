@@ -9,8 +9,8 @@
 		<img src="favicon.png" alt="user info" />
 	</div> -->
 	<div class="main-info">
-		<StrongItem title="Age" >{user.age} ans</StrongItem>
-		<StrongItem title="Profession" >{user.job}</StrongItem>
+		<StrongItem title="Age" >{user.main.age} ans</StrongItem>
+		<StrongItem title="Profession" >{user.main.job}</StrongItem>
 		<StrongItem title="Passe-temps" >
 			<ul>
 				{#each user.hobbies as hobby}
@@ -30,8 +30,8 @@
 				<li>{user.address.city}, {user.address.country}</li>
 			</ul>
 		</StrongItem>
-		<StrongItem title="Téléphone" >{user.phone}</StrongItem>
-		<StrongItem title="Adresse courriel" >{user.email}</StrongItem>
+		<StrongItem title="Téléphone" >{user.main.phone}</StrongItem>
+		<StrongItem title="Adresse courriel" >{user.main.email}</StrongItem>
 	</div>
 </div>
 

@@ -3,24 +3,27 @@
   import {grayscale} from "$lib/store"
   import {links} from "./links"
   import Sizes from '$lib/test/Sizes.svelte';
+  import Icon from '$lib/UI/Icon.svelte';
 	import Dataset from "$lib/test/Dataset.svelte"
 	// import About from 'src/routes/about.svelte';
-  let showNavbar = false
-  $: console.log(showNavbar)
-  function collapse() {
-    showNavbar = !showNavbar
-    if (showNavbar) $grayscale = "50%"
-    else $grayscale = "0%"
+  // let showNavbar = true
+  // $: console.log(showNavbar)
+  // function collapse() {
+  //   showNavbar = !showNavbar
+  //   if (showNavbar) $grayscale = "50%"
+  //   else $grayscale = "0%"
 
-  }
+  // }
 
 </script>
 <Sizes />
-<nav on:click={collapse} class:drawer={showNavbar == false}>
+<nav >
+<!-- <nav on:click={collapse} on:mouseover={collapse} on:focus={collapse} on:mouseleave={collapse} class:drawer={showNavbar == false}> -->
 	
 	<ul>
-		{#each links as {url, label}}
-		<li class:active={$page.url.pathname === url}><a sveltekit:prefetch href={url}>{label}</a></li>
+		{#each links as {url, label, icon}}
+		<li class="nav-item" class:active={$page.url.pathname === url}><a class="nav-link" title={label} sveltekit:prefetch href={url}><Icon {icon} />
+ <span>{label}</span></a></li>
     {/each}
 		
 	</ul>
@@ -31,12 +34,12 @@
 <style lang="scss" >
 nav {
   background-color: rgba(255, 255, 255, 0.25);
-  // width: auto;
-  height: 100vh;
-  display: flex;
-  gap: 1em;
-  flex-direction: column;
-  justify-content: flex-start;
+  width: 100%;
+  // height: 100vh;
+  // display: flex;
+  // gap: 1em;
+  // flex-direction: row;
+  // justify-content: center;
   padding: 1em;
   box-sizing: border-box;
   transition: all 0.5s ease 0.1s;
@@ -53,10 +56,10 @@ nav {
   // }
   
 }
-.drawer {
-  transform: translateX(-80%);
+// .drawer {
+//   transform: translateX(-80%);
   // right: 90%;
-}
+// }
 //   background-color: rgba(255, 255, 255, 0.5);
 //   border-right: 1px solid #ccc;
 //   // z-index: 10;
@@ -88,17 +91,29 @@ ul {
   padding: 1em 0;
   // padding: 0;
   margin: 0;
-  // height: 3em;
-  max-width: auto;
+  height: 3em;
+  // max-width: auto;
   display: flex;
   gap: 1em;
-  flex-direction: column;
-  justify-content: flex-start;
+  flex-direction: row;
+  justify-content: space-evenly;
   align-items: center;
   list-style: none;
   background: var(--background);
-  background-size: contain;
+  // background-size: contain;
 }
+
+li {
+  
+  a {
+    font-size: 16px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    line-height: 0;
+  }
+}
+
 
 // li {
 //   // position: relative;

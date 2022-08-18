@@ -9,15 +9,15 @@
 </footer>
 
 <style lang="scss" >
-	#blank {
-		position: relative; 
-		bottom: 0;
-		line-height: 1em;
-		padding: 1em 0;
+	// #blank {
+	// 	position: relative; 
+	// 	bottom: 0;
+	// 	line-height: 1em;
+	// 	padding: 1em 0;
 
-	}
+	// }
 footer {
-	position: fixed;
+	position: absolute;
 	z-index: 1;
 	left: center;
 	bottom: 0px;

@@ -1,0 +1,57 @@
+nav {
+	top: 0;
+	left: 0;
+	position: sticky; 
+	z-index: 1;
+}
+
+.nav-link {
+	span {
+		display: none;
+	}
+}
+
+@media (min-width: $sm) {
+	
+}
+
+@media (min-width: $md) {
+	.nav-link {
+    span {
+      display: initial;
+    }
+  }
+}
+
+@media (min-width: $lg) {
+	
+}
+
+@media (min-width: $xl) {
+	
+}
+
+@media (min-width: $xxl) {
+	
+}
+
+@media (min-width: $sm) {
+	
+}
+
+@media (min-width: $md) {
+	
+}
+
+@media (min-width: $lg) {
+	
+}
+
+@media (min-width: $xl) {
+	
+}
+
+@media (min-width: $xxl) {
+	
+}
+

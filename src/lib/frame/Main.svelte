@@ -2,23 +2,29 @@
 	import {grayscale} from "$lib/store"
 
 </script>
-<main style="filter: grayscale({$grayscale})">
+<main >
+<!-- <main style="filter: grayscale({$grayscale})"> -->
 	<slot />
 </main>
 
 <style lang="scss" >
 	main {
 		/* height: auto; */
-		width: 100%;
-		max-height: 100vh;
+		// width: 100%;
+		min-height: 100vh;
+		// text-align: center;
 
 		// height: calc(100vh - 48px - 60px);
-		margin: 1em auto;
+		// margin: 1em auto;
 		
 		// box-sizing: border-box;
-		overflow-y: scroll;
+		// overflow-x: scroll;
 		transition: all 0.3s linear 0.1s;
+		// * {
+		// 	margin: auto;
+		// }
 	}
+
 
 
 	// @media (min-width: 640px) {

@@ -1,6 +1,6 @@
 <script lang="ts" >
-  import type {User} from "$lib/data/types"
-  export let intro: User
+  import type {User, Main, Intro} from "$lib/data/types"
+  export let intro: Intro
 
 </script>
 <!-- <article> -->

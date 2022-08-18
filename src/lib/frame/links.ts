@@ -1,5 +1,5 @@
 export const links = [
-  {url: "/", label: "Accueil"},
-  {url: "/about", label: "about"},
-  {url: "/todos", label: "todos"},
+  {url: "/", label: "Accueil", icon: "home" },
+  {url: "/about", label: "about", icon: "info" },
+  {url: "/todos", label: "todos", icon: "list" },
 ]
