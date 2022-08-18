@@ -1,5 +1,5 @@
 <script lang="ts" >
-  import type {User, Main, Intro} from "$lib/data/types"
+  import type {Intro} from "$lib/data/types"
   export let intro: Intro
 
 </script>
@@ -46,6 +46,27 @@
 		text-align: center;
 
 	}
+
+	@media (min-width: var(--sm)) {
+
+}
+
+@media (min-width: var(--md)) {
+
+}
+
+@media (min-width: var(--lg)) {
+
+}
+
+@media (min-width: var(--xl)) {
+
+}
+
+@media (min-width: var(--xxl)) {
+
+}
+
 	/* 
   figure, .frame {
     // height: auto;

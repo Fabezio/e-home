@@ -49,4 +49,25 @@
 	// a:hover {
 	// 	color: var(--accent-color);
 	// } */
+
+	@media (min-width: var(--sm)) {
+
+}
+
+@media (min-width: var(--md)) {
+
+}
+
+@media (min-width: var(--lg)) {
+
+}
+
+@media (min-width: var(--xl)) {
+
+}
+
+@media (min-width: var(--xxl)) {
+
+}
+
 </style>

@@ -4,8 +4,8 @@
 
 <script lang="ts">
 	// import Counter from '$lib/Counter.svelte';
-	import Card from "$lib/UI/Card.svelte";
-	import Intro from "$lib/UI/Intro.svelte";
+	import Card from "$lib/components/UI/Card.svelte";
+	import Intro from "$lib/components/UI/Intro.svelte";
 	import {user} from "$lib/data/users"
 		// console.log(typeof user)
 	
@@ -46,7 +46,24 @@
 <!-- </section> -->
 
 <style lang="scss" >
-// div {
-// // 	margin: auto;
-// }
+@media (min-width: var(--sm)) {
+
+}
+
+@media (min-width: var(--md)) {
+
+}
+
+@media (min-width: var(--lg)) {
+
+}
+
+@media (min-width: var(--xl)) {
+
+}
+
+@media (min-width: var(--xxl)) {
+
+}
+
 </style>

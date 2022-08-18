@@ -1,9 +1,9 @@
 <script lang="ts" >
   import {page} from '$app/stores';
   import {grayscale} from "$lib/store"
-  import {links} from "./links"
+  import {links} from "$lib/data/links"
+  import Icon from '$lib/components/UI/Icon.svelte';
   import Sizes from '$lib/test/Sizes.svelte';
-  import Icon from '$lib/UI/Icon.svelte';
 	import Dataset from "$lib/test/Dataset.svelte"
 	// import About from 'src/routes/about.svelte';
   // let showNavbar = true
@@ -131,6 +131,28 @@ li {
 //     border-top: var(--size) solid var(--accent-color);
 //   }
 // }
+
+@media (min-width: var(--sm)) {
+
+}
+
+@media (min-width: var(--md)) {
+
+}
+
+@media (min-width: var(--lg)) {
+
+}
+
+@media (min-width: var(--xl)) {
+
+}
+
+@media (min-width: var(--xxl)) {
+
+}
+
+
 // @media (min-width: 640px) {
 // 	}
 

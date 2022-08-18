@@ -1,7 +1,7 @@
 <script lang="ts">
 	
-	import App from '$lib/App.svelte';
-	import * as Frame from '$lib/frame/index';
+	import App from '$lib/components/App.svelte';
+	import * as Frame from '$lib/components/layout/index';
 	import * as Test from '$lib/test/index';
 
 	import '../app.scss';
@@ -18,13 +18,24 @@
 
 
 <style lang="scss" >
-	// @media (min-width: 640px) {}
-	
-	// @media (min-width: 768px) {}
-	
-	// @media (min-width: 1024px) {}
-	
-	// @media (min-width: 1280px) {}
-	
-	// @media (min-width: 1536px) {}
+@media (min-width: var(--sm)) {
+
+}
+
+@media (min-width: var(--md)) {
+
+}
+
+@media (min-width: var(--lg)) {
+
+}
+
+@media (min-width: var(--xl)) {
+
+}
+
+@media (min-width: var(--xxl)) {
+
+}
+
 </style>
