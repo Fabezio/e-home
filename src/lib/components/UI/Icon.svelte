@@ -1,11 +1,16 @@
 <script>
   export let icon = "home"
+  // import "@fortawesome/fontawesome-free/css/fontawesome.min.css"
 </script>
-<!-- <svelte:head>
-  <script src="https://kit.fontawesome.com/347214cdeb.js" crossorigin="anonymous"></script>
-</svelte:head> -->
+<svelte:head>
+  <link href="node_modules/@fortawesome/fontawesome-free/css/fontawesome.css" rel="stylesheet" />
+  <link href="node_modules/@fortawesome/fontawesome-free/css/brands.css" rel="stylesheet" />
+  <link href="node_modules/@fortawesome/fontawesome-free/css/solid.css" rel="stylesheet" />
 
-<i class="fas fa-{icon} fa-2xl" />
+  <!-- <script src="https://kit.fontawesome.com/347214cdeb.js" crossorigin="anonymous"></script> -->
+</svelte:head>
+
+<i class="fa-solid fa-{icon} fa-fw fa-lg" />
 
 <style lang="scss" >
 
